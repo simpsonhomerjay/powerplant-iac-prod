@@ -1,5 +1,5 @@
 provider "aws" {
-        region = "us-east-2"
+        region = var.region
 }
 
 module "network-module" {
@@ -11,5 +11,5 @@ module "infa-module" {
 
         subnetid = module.network-module.subnetid
         sgid = module.network-module.sgid
-        insttype = "t2.small"
+        insttype = var.insttype
 }
