@@ -3,5 +3,5 @@ variable "region" {
 }
 
 variable "insttype" {
-  default = "t2.medium"
+  default = "t2.small"
 }
